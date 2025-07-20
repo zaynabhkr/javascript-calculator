@@ -1,8 +1,10 @@
 # Calculate me!
 
 This project replicates the core functionality of a basic calculator and satisfies all specified user stories.
+![Try Live Version now~]https://javascript-calculator-liard.vercel.app/
 
 ---
+
 
 ## 🚀 Setup Instructions
 

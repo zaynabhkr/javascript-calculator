@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+body {
+  background: linear-gradient(to bottom right, #f8a420, #f79d00);
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#calculator {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 320px;
+}
+
+#display {
+  background: #dce3c4;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: right;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+  color: #2e2e2e;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px #999;
+  transition: all 0.15s ease-in-out;
+  font-family: inherit;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Number buttons */
+button.number {
+  background-color: #bfbfbf;
+  color: #000;
+}
+
+/* Operator buttons */
+button.operator {
+  background-color: #3c8772;
+}
+
+/* Clear button */
+#clear {
+  background-color: #cc3b3b;
+}
+
+/* Equal button */
+#equals {
+  background-color: #f7c40f;
+  color: #000;
+}
+
+button.number:hover,
+button.operator:hover,
+#equals:hover,
+#clear:hover {
+  opacity: 0.9;
+  filter: brightness(110%);
+  transform: scale(1.03);
+}
+
+button.number:active,
+button.operator:active,
+#equals:active,
+#clear:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #666;
+}
+
+button:active,
+button.active {
+  transform: translateY(2px);
+  box-shadow: 0 2px #666;
+  opacity: 0.9;
+}
